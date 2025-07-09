@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Zakaria Bacha | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card i,
+        .card img {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills,
+        .about,
+        .projects,
+        .contact {
+            padding: 2rem;
+        }
+
+        .skills h2,
+        .about h2,
+        .projects h2,
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .icons div {
+            text-align: center;
+        }
+
+        .icons img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 0.5rem;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .project {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .project a {
+            color: #00f7ff;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 0.7rem;
+            border-radius: 8px;
+            border: none;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .contact button {
+            background: #00f7ff;
+            color: #000;
+            padding: 0.7rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #00f7ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Muhammad Zakaria Bacha</h1>
+        <p>Recent AI Graduate | Full Stack & ML Developer</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am Muhammad Zakaria Bacha, a passionate AI graduate with strong interests in machine learning, deep
+            learning, and full-stack web development. My expertise ranges from backend frameworks like Flask and FastAPI
+            to deep learning libraries such as TensorFlow and PyTorch. I enjoy building innovative solutions and
+            interactive web applications.</p>
+    </section>
+
+    <section class="dashboard">
+        <div class="card">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Education</h3>
+            <p>BS in Artificial Intelligence</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Projects</h3>
+            <p>Worked on ML, Deep Learning & Web Projects</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Experience</h3>
+            <p>Internships & Freelancing</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h4><a href="#" target="_blank">Bone Fracture Classification</a></h4>
+                <p>Deep learning model using InceptionV3 and PyTorch for medical image classification.</p>
+            </div>
+            <div class="project">
+                <h4><a href="#" target="_blank">AI Chatbot Assistant</a></h4>
+                <p>Voice-based assistant using Python, speech recognition, and OpenAI API integration.</p>
+            </div>
+            <div class="project">
+                <h4><a href="#" target="_blank">School Fee Management System</a></h4>
+                <p>Web app using Node.js, Express, and MongoDB for managing school fee records.</p>
+            </div>
+            <div class="project">
+                <h4><a href="#" target="_blank">Portfolio Website</a></h4>
+                <p>Personal portfolio built with HTML, CSS, and JS showcasing skills and projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skill Set</h2>
+        <div class="icons">
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="ML"
+                    style="height:50px;">
+                <p>ML</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow">
+                <p>TensorFlow</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch">
+                <p>PyTorch</p>
+            </div>
+            <div><img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png"
+                    alt="Streamlit" style="height:40px;">
+                <p>Streamlit</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=flask" alt="Flask">
+                <p>Flask</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI">
+                <p>FastAPI</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/overleaf.svg" alt="Overleaf">
+                <p>Overleaf</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=html" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=css" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js">
+                <p>Node.js</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=express" alt="Express">
+                <p>Express</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB">
+                <p>MongoDB</p>
+            </div>
+            <div><img src="https://skillicons.dev/icons?i=mysql" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg"
+                    alt="Matplotlib">
+                <p>Matplotlib</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                <p>Pandas</p>
+            </div>
+            <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                <p>NumPy</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xrbkwrvg" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+    <section>
+        <div class="social-icons">
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Zakaria Bacha. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
